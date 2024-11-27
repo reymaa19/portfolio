@@ -2,6 +2,9 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Socials from "@/components/Socials";
+import { FileDown } from "lucide-react";
+import Link from "next/link";
 
 type Testimonial = {
     quote: string;
@@ -38,7 +41,7 @@ export const AnimatedTestimonials = ({
         return Math.floor(Math.random() * 21) - 10;
     };
     return (
-        <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
+        <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12">
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20 z-0">
                 <div>
                     <div className="relative h-80 w-full">
@@ -110,7 +113,7 @@ export const AnimatedTestimonials = ({
                         <p className="text-sm text-gray-500 dark:text-neutral-500">
                             {testimonials[active].designation}
                         </p>
-                        <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
+                        <motion.div className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
                             {testimonials[active].quote.split(" ").map((word, index) => (
                                 <motion.span
                                     key={index}
@@ -134,7 +137,17 @@ export const AnimatedTestimonials = ({
                                     {word}&nbsp;
                                 </motion.span>
                             ))}
-                        </motion.p>
+
+                            <section className="mt-8 flex items-center gap-8">
+                                <Link href="/resume.pdf" target="_blank">
+                                    <button className="flex flex-row gap-1 px-2 py-2 rounded-md border border-neutral-300 bg-white text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                                        <span className="font-semibold">Resume </span>
+                                        <FileDown className="ml-1 size-5" />
+                                    </button>
+                                </Link>
+                                <Socials />
+                            </section>
+                        </motion.div>
                     </motion.div>
                 </div>
             </div>
@@ -163,7 +176,7 @@ export default function Headshots() {
         {
             quote: "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
             name: "Reynald Maala",
-            designation: "BrainStation Bootcamp Graduate",
+            designation: "Bootcamp Graduate",
             src: "/rrc.png",
         },
         {

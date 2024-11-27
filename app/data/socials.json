@@ -1,0 +1,19 @@
+{
+    "socials": [
+        {
+            "name": "LinkedIn",
+            "href": "https://linkedin.com/in/reynaldmaala",
+            "icon": "linkedin"
+        },
+        {
+            "name": "GitHub",
+            "href": "https://github.com/reymaa19",
+            "icon": "github"
+        },
+        {
+            "name": "Email",
+            "href": "mailto:rcmaala@gmail.com",
+            "icon": "mail"
+        }
+    ]
+}

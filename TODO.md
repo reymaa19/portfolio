@@ -1,6 +1,7 @@
 - [x] Create Projects section
 - [x] Create Contact section
 - [x] Create Footer section
+- [ ] Create a Skills section
 - [x] Create Resume view
 - [ ] Add descriptions
 - [ ] Add certifications

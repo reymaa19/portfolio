@@ -1,0 +1,46 @@
+{
+    "Languages": [
+        { "name": "JavaScript", "logo": "javascript" },
+        { "name": "TypeScript", "logo": "typescript" },
+        { "name": "Python", "logo": "typescript" },
+        { "name": "SQL", "logo": "sql" },
+        { "name": "HTML", "logo": "html" },
+        { "name": "CSS", "logo": "css" },
+        { "name": "SCSS", "logo": "scss" }
+    ],
+    "Frameworks": [
+        { "name": "Next.js", "logo": "next.js" },
+        { "name": "Node.js", "logo": "node.js" },
+        { "name": "Express.js", "logo": "express.js" },
+        { "name": "Tailwind CSS", "logo": "tailwind css" }
+    ],
+    "Libraries": [
+        { "name": "React", "logo": "React" },
+        { "name": "Shadcn", "logo": "Shadcn" },
+        { "name": "Material UI", "logo": "Material UI" },
+        { "name": "Bootstrap", "logo": "Bootstrap}" }
+    ],
+    "Databases": [
+        { "name": "MySQL", "logo": "MySQL" },
+        { "name": "Microsoft SQL Server", "logo": "Microsoft SQL Server" },
+        { "name": "SQLite", "logo": "SQLite" },
+        { "name": "DynamoDB", "logo": "DynamoDB" },
+        { "name": "MongoDB", "logo": "MongoDB}" }
+    ],
+    "Tools": [
+        { "name": "Git", "logo": "Git" },
+        { "name": "GitHub", "logo": "GitHub" },
+        { "name": "Docker", "logo": "Docker" },
+        { "name": "Jest", "logo": "Jest" },
+        { "name": "Cypress", "logo": "Cypress" },
+        { "name": "Figma", "logo": "Figma" },
+        { "name": "Postman", "logo": "Postman" },
+        { "name": "Twilio", "logo": "Twilio" },
+        { "name": "Jira", "logo": "Jira" }
+    ],
+    "APIs": [
+        { "name": "REST", "logo": "REST" },
+        { "name": "GraphQL", "logo": "GraphQL" }
+    ],
+    "Cloud Platforms": [{ "name": "Amazon Web Services", "logo": "Amazon Web Services" }]
+}

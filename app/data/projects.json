@@ -1,8 +1,8 @@
 {
     "projects": [
         {
-            "name": "Tradingview Telegram Alerts",
-            "description": "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
+            "name": "NBA Fantasy Zone",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "image": "/tv-tele-alerts.png",
             "tags": ["Python", "FastAPI", "Docker", "Fly.io", "Selenium", "Telegram Bot API"],
             "links": [
@@ -14,8 +14,8 @@
             ]
         },
         {
-            "name": "NFTVue",
-            "description": "Non-Fungible Tokens (NFTs) Gallery Viewer website that allows users to connect their crypto wallets to view and verify their tokens",
+            "name": "Bell MTS Hackathon",
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
             "href": "https://nftvue.vercel.app",
             "image": "/nftvue.png",
             "tags": ["NextJS", "TailwindCSS", "MetaMask", "WalletConnect", "Web3", "NFTScan", "HashKey DID"],

@@ -1,56 +1,27 @@
 {
     "career": [
         {
-            "name": "DBS Bank",
+            "name": "QDoc Inc.",
             "href": "https://www.dbs.com.sg",
-            "title": "Graduate Associate (SEED Programme)",
+            "title": "Back End Developer",
             "logo": "/dbs.png",
-            "start": "Jul 2023",
-            "description": [
-                "Developed the Java backend for a bank account servicing process with multiple channel integrations using Activiti workflow",
-                "Built a custom database migration tool using Python and MariaDB and facilitated the migration of 1000+ processes from a vendor platform"
-            ]
-        },
-        {
-            "name": "Singapore Institute of Technology",
-            "href": "https://www.singaporetech.edu.sg",
-            "title": "Software Developer (Contract)",
-            "logo": "/sit.png",
-            "start": "Apr 2023",
-            "end": "Jun 2023",
-            "description": [
-                "Built NFTVue, a NFT gallery website that allows students to connect their crypto wallets to view and verify their school event-issued NFTs",
-                "Worked on DemoConstruct, a full-stack web application (React + Python) that uses Meshroom to reconstruct 3D models from captured images"
-            ],
-            "links": [
-                {
-                    "name": "NFTVue",
-                    "href": "https://nftvue.vercel.app",
-                    "icon": "globe"
-                }
-            ]
-        },
-        {
-            "name": "DBS Bank",
-            "href": "https://www.dbs.com.sg",
-            "title": "Software Developer (Intern)",
-            "logo": "/dbs.png",
-            "start": "May 2022",
+            "start": "Aug 2022",
             "end": "Dec 2022",
             "description": [
-                "Worked on the backend for the digital exchange and asset custody application using Spring Boot and Java",
-                "Built an admin dashboard web application for a DBS Metaverse event using Spring Security and Angular"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae porttitor dolor. Nam sodales vestibulum dignissim. Aliquam leo est, sagittis in imperdiet id, sollicitudin in dui.",
+                "Sed vel velit tincidunt, congue lorem in, rhoncus lectus. Donec elementum dictum tellus eu porttitor. Fusce volutpat sapien nibh, ac lobortis dui rutrum vel. Etiam sed arcu vel justo mollis condimentum a a leo. Nam id eleifend felis."
             ]
         },
         {
-            "name": "Activate Interactive Pte Ltd",
+            "name": "Winnipeg Jazz Orchestra/Red River College Polytechnic",
             "href": "https://www.activate.sg",
-            "title": "Software Developer (Intern)",
+            "title": "Full Stack Developer",
             "logo": "/activate.png",
-            "start": "May 2019",
-            "end": "Aug 2019",
+            "start": "May 2022",
+            "end": "Aug 2022",
             "description": [
-                "Developed RP Connect, the iOS and Android mobile app for Republic Polytechnic using React Native"
+                "Morbi sit amet urna eu ante convallis gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ipsum tortor, ultrices non mollis et, gravida et metus.",
+                "Quisque eu laoreet metus. Morbi pharetra diam quis nunc pellentesque commodo. Integer pharetra dui sit amet tellus gravida posuere eu ultricies urna."
             ]
         }
     ]

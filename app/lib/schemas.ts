@@ -48,10 +48,9 @@ export const projectSchema = z.object({ projects: z.array(project) });
 export const socialSchema = z.object({ socials: z.array(iconLink) });
 export const skillSchema = z.object({
     Languages: z.array(skill),
+    Tools: z.array(skill),
     Frameworks: z.array(skill),
     Libraries: z.array(skill),
     Databases: z.array(skill),
-    Tools: z.array(skill),
-    APIs: z.array(skill),
-    "Cloud Platforms": z.array(skill),
+    "Cloud Platforms & APIs": z.array(skill),
 });

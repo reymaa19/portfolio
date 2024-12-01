@@ -2,6 +2,7 @@ import Headshots from "@/components/Headshots";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import TechStack from "@/components/TechStack";
+import Contact from "@/components/Contact";
 
 export default function Home() {
     return (
@@ -10,7 +11,7 @@ export default function Home() {
             <Experience />
             <Projects limit={2} />
             <TechStack />
-            <h2>Contact Section</h2>
+            <Contact />
         </main>
     );
 }

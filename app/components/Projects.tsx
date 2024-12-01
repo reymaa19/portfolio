@@ -17,7 +17,7 @@ export default function Projects({ limit }: Props) {
     return (
         <section className="flex flex-col gap-8">
             <div className="flex justify-between">
-                <h2 className="title text-2xl sm:text-3xl">Projects</h2>
+                <h2 className="title text-2xl sm:text-2xl">Projects</h2>
                 <LinkWithIcon
                     href="/projects"
                     position="right"

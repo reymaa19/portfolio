@@ -9,13 +9,13 @@
         { "name": "SCSS", "logo": "scss" }
     ],
     "Frameworks": [
+        { "name": "React", "logo": "React" },
         { "name": "Next.js", "logo": "next.js" },
         { "name": "Node.js", "logo": "node.js" },
         { "name": "Express.js", "logo": "express.js" },
         { "name": "Tailwind CSS", "logo": "tailwind css" }
     ],
     "Libraries": [
-        { "name": "React", "logo": "React" },
         { "name": "Shadcn", "logo": "Shadcn" },
         { "name": "Material UI", "logo": "Material UI" },
         { "name": "Bootstrap", "logo": "Bootstrap}" }
@@ -28,6 +28,7 @@
         { "name": "MongoDB", "logo": "MongoDB}" }
     ],
     "Tools": [
+        { "name": "Vite", "logo": "Vite" },
         { "name": "Git", "logo": "Git" },
         { "name": "GitHub", "logo": "GitHub" },
         { "name": "Docker", "logo": "Docker" },
@@ -38,9 +39,9 @@
         { "name": "Twilio", "logo": "Twilio" },
         { "name": "Jira", "logo": "Jira" }
     ],
-    "APIs": [
+    "Cloud Platforms & APIs": [
+        { "name": "Amazon Web Services", "logo": "Amazon Web Services" },
         { "name": "REST", "logo": "REST" },
         { "name": "GraphQL", "logo": "GraphQL" }
-    ],
-    "Cloud Platforms": [{ "name": "Amazon Web Services", "logo": "Amazon Web Services" }]
+    ]
 }

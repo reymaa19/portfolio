@@ -3,12 +3,17 @@
         {
             "name": "NBA Fantasy Zone",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "image": "/tv-tele-alerts.png",
-            "tags": ["Python", "FastAPI", "Docker", "Fly.io", "Selenium", "Telegram Bot API"],
+            "image": "/capstone.png",
+            "tags": ["React", "API", "SQL", "Python", "Scraping", "Node"],
             "links": [
                 {
+                    "name": "Website",
+                    "href": "https://main.d2bp5hr9fb5epx.amplifyapp.com/",
+                    "icon": "globe"
+                },
+                {
                     "name": "Source",
-                    "href": "https://github.com/tedawf/tradingview-telegram-alerts",
+                    "href": "https://github.com/reymaa19/nba-fantasy-zone",
                     "icon": "github"
                 }
             ]
@@ -17,13 +22,18 @@
             "name": "Bell MTS Hackathon",
             "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
             "href": "https://nftvue.vercel.app",
-            "image": "/nftvue.png",
-            "tags": ["NextJS", "TailwindCSS", "MetaMask", "WalletConnect", "Web3", "NFTScan", "HashKey DID"],
+            "image": "/bell.png",
+            "tags": ["React", "SCSS", "HTML", "Material UI"],
             "links": [
                 {
                     "name": "Website",
-                    "href": "https://nftvue.vercel.app",
+                    "href": "https://main.d2b60lk8pnosrj.amplifyapp.com/",
                     "icon": "globe"
+                },
+                {
+                    "name": "Source",
+                    "href": "https://github.com/reymaa19/bell-industry-hackathon",
+                    "icon": "github"
                 }
             ]
         },

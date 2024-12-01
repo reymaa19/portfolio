@@ -1,35 +1,4 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { LucideProps } from "lucide-react";
-import dynamicIconImports from "lucide-react/dynamicIconImports";
-
-interface IconProps extends Omit<LucideProps, "ref"> {
-    name: keyof typeof dynamicIconImports;
-}
-
-const Icon = ({ name, ...props }: IconProps) => {
-    const [LucideIcon, setLucideIcon] = useState<React.ComponentType<LucideProps> | null>(null);
-
-    useEffect(() => {
-        const loadIcon = async () => {
-            const { default: LoadedIcon } = await dynamicIconImports[name]();
-            setLucideIcon(() => LoadedIcon);
-        };
-
-        loadIcon();
-    }, [name]);
-
-    if (!LucideIcon) {
-        return <div style={{ background: "#ddd", width: 24, height: 24 }} />;
-    }
-
-    return <LucideIcon {...props} />;
-};
-
-export default React.memo(Icon, (prevProps, nextProps) => {
-    return prevProps.name === nextProps.name && prevProps.className === nextProps.className;
-});
-
 import {
     FaJs,
     FaPython,
@@ -63,10 +32,42 @@ import {
     SiJira,
     SiGraphql,
     SiAmazonapigateway,
+    SiVite,
 } from "react-icons/si";
+import { IconType } from "react-icons";
 import Image from "next/image";
+import React, { useEffect, useState, FC } from "react";
+import { LucideProps } from "lucide-react";
+import dynamicIconImports from "lucide-react/dynamicIconImports";
 
-const icons = {
+interface IconProps extends Omit<LucideProps, "ref"> {
+    name: keyof typeof dynamicIconImports;
+}
+
+const Icon = ({ name, ...props }: IconProps) => {
+    const [LucideIcon, setLucideIcon] = useState<React.ComponentType<LucideProps> | null>(null);
+
+    useEffect(() => {
+        const loadIcon = async () => {
+            const { default: LoadedIcon } = await dynamicIconImports[name]();
+            setLucideIcon(() => LoadedIcon);
+        };
+
+        loadIcon();
+    }, [name]);
+
+    if (!LucideIcon) {
+        return <div style={{ background: "#ddd", width: 24, height: 24 }} />;
+    }
+
+    return <LucideIcon {...props} />;
+};
+
+export default React.memo(Icon, (prevProps, nextProps) => {
+    return prevProps.name === nextProps.name && prevProps.className === nextProps.className;
+});
+
+const icons: Record<string, IconType> = {
     javascript: FaJs,
     typescript: SiTypescript,
     python: FaPython,
@@ -95,13 +96,14 @@ const icons = {
     postman: SiPostman,
     twilio: SiTwilio,
     jira: SiJira,
-    rest: SiAmazonapigateway, // Assuming REST uses GraphQL icon
+    rest: SiAmazonapigateway,
     graphql: SiGraphql,
     "amazon web services": FaAws,
+    vite: SiVite,
 };
 
-export function SkillsIcon({ name, ...props }) {
-    if (name == "shadcn") return <Image src={"/shadcn.png"} alt="Shadcn" width={20} height={20} />;
+export const SkillsIcon: FC<{ name: string }> = ({ name }: { name: string }) => {
+    if (name === "shadcn") return <Image src={`/${name}.png`} alt={name} width={20} height={20} className="size-8" />;
     const IconComponent = icons[name];
-    return IconComponent ? <IconComponent className="size-7" {...props} /> : null;
-}
+    return <IconComponent className="size-8" />;
+};

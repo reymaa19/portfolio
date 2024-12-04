@@ -1,17 +1,18 @@
-import { Badge } from "@/components/ui/Badge";
+//import { Badge } from "@/components/ui/Badge";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Project } from "@/lib/schemas";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import Icon from "./Icon";
+//import Icon from "./Icon";
 
 interface Props {
     project: Project;
 }
 
 export function ProjectCard({ project }: Props) {
-    const { name, href, description, image, tags, links } = project;
+    //const { name, href, description, image, tags, links } = project;
+    const { name, href, description, image, links } = project;
 
     return (
         <Card className="flex flex-col">

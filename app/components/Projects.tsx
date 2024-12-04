@@ -22,7 +22,7 @@ export default function Projects({ limit }: Props) {
                     href="/projects"
                     position="right"
                     icon={<ArrowRightIcon className="size-5" />}
-                    text="view more"
+                    text="View more"
                 />
             </div>
             <section className="grid grid-cols-1 gap-4 sm:grid-cols-2">

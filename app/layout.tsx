@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
+//import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
@@ -16,7 +16,6 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={"font-Satoshi antialiased mx-auto flex flex-col min-h-screen max-w-3xl px-8"}>
-                <Header />
                 <main className="flex-grow">{children}</main>
                 <Footer />
             </body>

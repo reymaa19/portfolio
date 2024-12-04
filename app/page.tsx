@@ -2,7 +2,7 @@ import Headshots from "@/components/Headshots";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import TechStack from "@/components/TechStack";
-import Contact from "@/components/Contact";
+import Contact from "@/components/ContactForm";
 
 export default function Home() {
     return (

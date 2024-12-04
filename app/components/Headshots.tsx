@@ -140,7 +140,7 @@ export const AnimatedTestimonials = ({
 
                             <section className="mt-8 flex items-center gap-8">
                                 <Link href="/resume.pdf" target="_blank">
-                                    <button className="flex flex-row gap-1 px-2 py-2 rounded-md border border-neutral-300 bg-white text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                                    <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full sm:w-auto">
                                         <span className="font-semibold">Resume </span>
                                         <FileDown className="ml-1 size-5" />
                                     </button>

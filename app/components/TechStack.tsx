@@ -19,7 +19,7 @@ export default function Projects() {
                             <ul className="flex gap-2 flex-wrap max-w-full pl-2">
                                 {skills.map((skill) => (
                                     <Tooltip key={skill.name}>
-                                        <TooltipTrigger>
+                                        <TooltipTrigger className="cursor-default">
                                             <li className="mr-4">
                                                 <SkillsIcon name={skill.name.toLowerCase()} />
                                             </li>

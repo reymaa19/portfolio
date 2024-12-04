@@ -30,7 +30,7 @@ export function ProjectCard({ project }: Props) {
             </CardHeader>
             <CardContent className="flex flex-col gap-2">
                 <CardTitle>{name}</CardTitle>
-                <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+                <Markdown className="prose max-w-full text-pretty text-xs text-muted-foreground dark:prose-invert">
                     {description}
                 </Markdown>
             </CardContent>

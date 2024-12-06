@@ -103,7 +103,7 @@ const icons: Record<string, IconType> = {
 };
 
 export const SkillsIcon: FC<{ name: string }> = ({ name }: { name: string }) => {
-    if (name === "shadcn") return <Image src={`/${name}.png`} alt={name} width={20} height={20} className="size-8 xl:size-10" />;
+    if (name === "shadcn") return <Image src={`/${name}.png`} alt={name} width={20} height={20} className="size-8 lg:size-10" />;
     const IconComponent = icons[name];
-    return <IconComponent className="size-8 xl:size-10" />;
+    return <IconComponent className="size-8 lg:size-10" />;
 };

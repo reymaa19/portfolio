@@ -15,7 +15,7 @@ export default function Projects() {
                 <TooltipProvider>
                     {Object.entries(techstack).map(([category, skills]) => (
                         <div key={category} className="flex flex-col gap-2 w-2/5 mb-8">
-                            <h3 className="text-base xl:text-xl">{category}</h3>
+                            <h3 className="text-base lg:text-xl">{category}</h3>
                             <ul className="flex gap-2 flex-wrap max-w-full pl-2">
                                 {skills.map((skill) => (
                                     <Tooltip key={skill.name}>

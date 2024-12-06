@@ -81,7 +81,7 @@ export default function ContactForm() {
                     <form onSubmit={handleSubmit} className="space-y-4 text-left">
                         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <div className="space-y-1">
-                                <Label htmlFor="name" className="ml-0.5 xl:text-lg">
+                                <Label htmlFor="name" className="ml-0.5 lg:text-lg">
                                     Name
                                 </Label>
                                 <Input
@@ -90,11 +90,11 @@ export default function ContactForm() {
                                     placeholder="Your name"
                                     value={values.name}
                                     onChange={handleChange}
-                                    className="shadow xl:text-base"
+                                    className="shadow lg:text-base"
                                 />
                             </div>
                             <div className="space-y-1">
-                                <Label htmlFor="email" className="ml-0.5 xl:text-lg">
+                                <Label htmlFor="email" className="ml-0.5 lg:text-lg">
                                     Email
                                 </Label>
                                 <Input
@@ -104,12 +104,12 @@ export default function ContactForm() {
                                     placeholder="Your email"
                                     value={values.email}
                                     onChange={handleChange}
-                                    className="shadow xl:text-base"
+                                    className="shadow lg:text-base"
                                 />
                             </div>
                         </div>
                         <div className="space-y-1">
-                            <Label htmlFor="message" className="ml-0.5 xl:text-lg">
+                            <Label htmlFor="message" className="ml-0.5 lg:text-lg">
                                 Message
                             </Label>
                             <Textarea
@@ -119,11 +119,11 @@ export default function ContactForm() {
                                 rows={6}
                                 value={values.message}
                                 onChange={handleChange}
-                                className="shadow xl:text-base"
+                                className="shadow lg:text-base"
                             />
                         </div>
                         <div className="flex flex-col md:flex-row">
-                            <Button type="submit" variant="outline" className="w-full sm:w-auto xl:text-base">
+                            <Button type="submit" variant="outline" className="w-full sm:w-auto lg:text-base">
                                 Send Message
                                 <VscSend />
                             </Button>

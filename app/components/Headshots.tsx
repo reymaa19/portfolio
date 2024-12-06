@@ -143,8 +143,8 @@ export const AnimatedTestimonials = ({
                             <section className="mt-8 flex items-center gap-8">
                                 <Link href="/resume.pdf" target="_blank">
                                     <Button>
-                                        <span className="font-semibold xl:text-base">Resume </span>
-                                        <FileDown className="ml-1 size-5 xl:size-7" />
+                                        <span className="font-semibold lg:text-base">Resume </span>
+                                        <FileDown className="ml-1 size-5 lg:size-7" />
                                     </Button>
                                 </Link>
                                 <Socials />

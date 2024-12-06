@@ -76,12 +76,12 @@ export default function ContactForm() {
             <div className="container">
                 <div className="max-w-full space-y-6">
                     <div className="space-y-1">
-                        <h2 className="title text-2xl sm:text-2xl">Contact Me</h2>
+                        <h2 className="title text-2xl md:text-3xl">Contact Me</h2>
                     </div>
                     <form onSubmit={handleSubmit} className="space-y-4 text-left">
                         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <div className="space-y-1">
-                                <Label htmlFor="name" className="ml-0.5">
+                                <Label htmlFor="name" className="ml-0.5 xl:text-lg">
                                     Name
                                 </Label>
                                 <Input
@@ -90,11 +90,11 @@ export default function ContactForm() {
                                     placeholder="Your name"
                                     value={values.name}
                                     onChange={handleChange}
-                                    className="shadow"
+                                    className="shadow xl:text-base"
                                 />
                             </div>
                             <div className="space-y-1">
-                                <Label htmlFor="email" className="ml-0.5">
+                                <Label htmlFor="email" className="ml-0.5 xl:text-lg">
                                     Email
                                 </Label>
                                 <Input
@@ -104,12 +104,12 @@ export default function ContactForm() {
                                     placeholder="Your email"
                                     value={values.email}
                                     onChange={handleChange}
-                                    className="shadow"
+                                    className="shadow xl:text-base"
                                 />
                             </div>
                         </div>
                         <div className="space-y-1">
-                            <Label htmlFor="message" className="ml-0.5">
+                            <Label htmlFor="message" className="ml-0.5 xl:text-lg">
                                 Message
                             </Label>
                             <Textarea
@@ -119,11 +119,11 @@ export default function ContactForm() {
                                 rows={6}
                                 value={values.message}
                                 onChange={handleChange}
-                                className="shadow"
+                                className="shadow xl:text-base"
                             />
                         </div>
                         <div className="flex flex-col md:flex-row">
-                            <Button type="submit" variant="outline" className="w-full sm:w-auto">
+                            <Button type="submit" variant="outline" className="w-full sm:w-auto xl:text-base">
                                 Send Message
                                 <VscSend />
                             </Button>

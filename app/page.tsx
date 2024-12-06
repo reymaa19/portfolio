@@ -9,7 +9,7 @@ export default function Home() {
         <main className="mt-8 flex flex-col gap-16 pb-16">
             <Headshots />
             <Experience />
-            <Projects limit={2} />
+            <Projects limit={6} />
             <TechStack />
             <Contact />
         </main>

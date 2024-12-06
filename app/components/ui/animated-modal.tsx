@@ -102,8 +102,8 @@ export const ModalBody = ({ children, className }: { children: ReactNode; classN
                         }}
                         transition={{
                             type: "spring",
-                            stiffness: 260,
-                            damping: 15,
+                            stiffness: 200, 
+                            damping: 20,
                         }}
                     >
                         <CloseIcon />
@@ -168,14 +168,15 @@ const CloseIcon = () => {
 
 // Hook to detect clicks outside of a component.
 // Add it in a separate file, I've added here for simplicity
-export const useOutsideClick = (ref: React.RefObject<HTMLDivElement>, callback: Function) => {
+export const useOutsideClick = (ref: React.RefObject<HTMLDivElement>, callback: (event: MouseEvent) => void) => {
     useEffect(() => {
-        const listener = (event: any) => {
+        const listener = (event: Event): void => {
             // DO NOTHING if the element being clicked is the target element or their children
-            if (!ref.current || ref.current.contains(event.target)) {
+            const target = event.target as Node;
+            if (!ref.current || ref.current.contains(target)) {
                 return;
             }
-            callback(event);
+            callback(event as MouseEvent);
         };
 
         document.addEventListener("mousedown", listener);

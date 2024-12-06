@@ -82,7 +82,7 @@ export const AnimatedTestimonials = ({
                                         width={500}
                                         height={500}
                                         draggable={false}
-                                        className="h-full w-full rounded-3xl object-cover object-center cursor-pointer"
+                                        className="xl:h-[350] h-full w-full rounded-3xl object-cover object-center cursor-pointer"
                                         onClick={handleNext}
                                     />
                                 </motion.div>
@@ -144,7 +144,7 @@ export const AnimatedTestimonials = ({
                                 <Link href="/resume.pdf" target="_blank">
                                     <Button>
                                         <span className="font-semibold">Resume </span>
-                                        <FileDown className="ml-1 size-5" />
+                                        <FileDown className="ml-1 size-5 xl:size-7" />
                                     </Button>
                                 </Link>
                                 <Socials />

@@ -6,7 +6,7 @@
 - [x] Add Skills hover details
 - [x] Add social links
 - [x] Add About descriptions
-- [ ] Add Project data
+- [x] Add Project data
 - [ ] Add validation to contact form
 - [ ] Refactor modal project view
 - [ ] Add certifications

@@ -9,13 +9,13 @@ export default function Projects() {
     return (
         <section className="flex flex-col gap-8">
             <div className="flex justify-between">
-                <h2 className="title text-2xl sm:text-2xl">Tech Stack</h2>
+                <h2 className="title text-2xl md:text-3xl">Tech Stack</h2>
             </div>
             <section className="flex flex-wrap justify-between">
                 <TooltipProvider>
                     {Object.entries(techstack).map(([category, skills]) => (
                         <div key={category} className="flex flex-col gap-2 w-2/5 mb-8">
-                            <h3 className="">{category}</h3>
+                            <h3 className="text-base xl:text-xl">{category}</h3>
                             <ul className="flex gap-2 flex-wrap max-w-full pl-2">
                                 {skills.map((skill) => (
                                     <Tooltip key={skill.name}>

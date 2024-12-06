@@ -82,7 +82,7 @@ export const AnimatedTestimonials = ({
                                         width={500}
                                         height={500}
                                         draggable={false}
-                                        className="sm:h-[350] w-full h-full rounded-3xl object-cover object-center cursor-pointer"
+                                        className="!h-[350] w-full rounded-3xl object-cover object-center cursor-pointer"
                                         onClick={handleNext}
                                     />
                                 </motion.div>

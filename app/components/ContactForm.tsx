@@ -116,18 +116,20 @@ export default function ContactForm() {
                                 name="message"
                                 id="message"
                                 placeholder="Have a project in mind? Let's discuss how I can help."
-                                rows={4}
+                                rows={6}
                                 value={values.message}
                                 onChange={handleChange}
                                 className="shadow"
                             />
                         </div>
                         <div className="flex flex-col md:flex-row">
-                            <Button type="submit" className="w-full sm:w-auto">
+                            <Button type="submit" variant="outline" className="w-full sm:w-auto">
                                 Send Message
                                 <VscSend />
                             </Button>
-                            <p className={`mx-auto my-auto text-green-700 ${notification.success ? "" : "hidden"}`}>
+                            <p
+                                className={`flex mx-auto my-auto text-green-700 ${notification.success ? "" : "hidden"}`}
+                            >
                                 <FaRegCheckCircle className="mr-2 mx-auto my-auto" />
                                 {notification.success}
                             </p>

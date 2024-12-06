@@ -4,7 +4,10 @@
 - [x] Create a Skills section
 - [x] Create Resume view
 - [x] Add Skills hover details
-- [ ] Add descriptions
+- [x] Add social links
+- [x] Add About descriptions
+- [ ] Add Project data
+- [ ] Add validation to contact form
+- [ ] Refactor modal project view
 - [ ] Add certifications
-- [ ] Add social links
 - [ ] Implement theme switcher

@@ -2,9 +2,10 @@
     "projects": [
         {
             "name": "NBA Fantasy Zone",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "description": "My Final Capstone Project at BrainStation. The NBA Fantasy Zone is a web application designed to enhance the experience of fantasy basketball fans.",
+            "href": "https://main.d2bp5hr9fb5epx.amplifyapp.com/",
             "image": "/capstone.png",
-            "tags": ["React", "API", "SQL", "Python", "Scraping", "Node"],
+            "tags": ["React", "API", "SQL", "Python", "Web Scraping", "Node", "Express"],
             "links": [
                 {
                     "name": "Website",
@@ -20,8 +21,8 @@
         },
         {
             "name": "Bell MTS Hackathon",
-            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-            "href": "https://nftvue.vercel.app",
+            "description": "The Bell Donation Matcher system seamlessly integrates with existing user flows and featured dynamic summary charts displaying user contributions and Bell's matched donations.",
+            "href": "https://main.d2b60lk8pnosrj.amplifyapp.com/",
             "image": "/bell.png",
             "tags": ["React", "SCSS", "HTML", "Material UI"],
             "links": [

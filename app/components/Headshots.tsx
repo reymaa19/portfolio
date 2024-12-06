@@ -5,6 +5,7 @@ import Image from "next/image";
 import Socials from "@/components/Socials";
 import { FileDown } from "lucide-react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 type Testimonial = {
     quote: string;
@@ -41,7 +42,7 @@ export const AnimatedTestimonials = ({
         return Math.floor(Math.random() * 21) - 10;
     };
     return (
-        <div className="max-w-sm md:max-w-4xl mx-auto antialiased px-4 md:px-8 lg:px-12">
+        <div className="max-w-sm md:max-w-4xl mx-auto antialiased px-4 md:px-8 lg:px-12 min-h-[336]">
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20 z-0">
                 <div>
                     <div className="relative h-80 w-full">
@@ -109,41 +110,42 @@ export const AnimatedTestimonials = ({
                             ease: "easeInOut",
                         }}
                     >
-                        <h3 className="text-2xl font-bold dark:text-white text-black">{testimonials[active].name}</h3>
-                        <p className="text-sm text-gray-500 dark:text-neutral-500">
+                        <h1 className="text-3xl font-bold dark:text-white text-black">{testimonials[active].name}</h1>
+                        <p className="text-lg mt-1 text-gray-500 dark:text-neutral-500">
                             {testimonials[active].designation}
                         </p>
-                        <motion.div className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
-                            {testimonials[active].quote.split(" ").map((word, index) => (
-                                <motion.span
-                                    key={index}
-                                    initial={{
-                                        filter: "blur(10px)",
-                                        opacity: 0,
-                                        y: 5,
-                                    }}
-                                    animate={{
-                                        filter: "blur(0px)",
-                                        opacity: 1,
-                                        y: 0,
-                                    }}
-                                    transition={{
-                                        duration: 0.2,
-                                        ease: "easeInOut",
-                                        delay: 0.02 * index,
-                                    }}
-                                    className="inline-block"
-                                >
-                                    {word}&nbsp;
-                                </motion.span>
-                            ))}
-
+                        <motion.div className="text-lg text-gray-500 mt-6 dark:text-neutral-300">
+                            <div className="md:h-[140]">
+                                {testimonials[active].quote.split(" ").map((word, index) => (
+                                    <motion.span
+                                        key={index}
+                                        initial={{
+                                            filter: "blur(10px)",
+                                            opacity: 0,
+                                            y: 5,
+                                        }}
+                                        animate={{
+                                            filter: "blur(0px)",
+                                            opacity: 1,
+                                            y: 0,
+                                        }}
+                                        transition={{
+                                            duration: 0.2,
+                                            ease: "easeInOut",
+                                            delay: 0.02 * index,
+                                        }}
+                                        className="inline-block"
+                                    >
+                                        {word}&nbsp;
+                                    </motion.span>
+                                ))}
+                            </div>
                             <section className="mt-8 flex items-center gap-8">
                                 <Link href="/resume.pdf" target="_blank">
-                                    <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full sm:w-auto">
+                                    <Button>
                                         <span className="font-semibold">Resume </span>
                                         <FileDown className="ml-1 size-5" />
-                                    </button>
+                                    </Button>
                                 </Link>
                                 <Socials />
                             </section>
@@ -168,21 +170,21 @@ export default function Headshots() {
 
     const testimonials = [
         {
-            quote: "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+            quote: "A 23-year-old software developer from Canada 🇨🇦, ready to launch a career in the software industry.",
             name: "Reynald Maala",
-            designation: "Full Stack Developer",
+            designation: "Software Developer",
             src: "/headshot.jpg",
         },
         {
-            quote: "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+            quote: "Lifelong learner and recent bootcamp graduate, eager to bring a fresh perspective and contribute to projects that make a real difference.",
             name: "Reynald Maala",
             designation: "Bootcamp Graduate",
             src: "/rrc.png",
         },
         {
-            quote: "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+            quote: "Passionate coach and basketball fan, driven by collaboration and team environments focused on growth and development.",
             name: "Reynald Maala",
-            designation: "Youth Basketball Coach",
+            designation: "Basketball Coach",
             src: "/pga.jpg",
         },
     ];

@@ -2,33 +2,79 @@
     "education": [
         {
             "name": "BrainStation",
-            "href": "https://www.digipen.edu.sg",
+            "href": "https://brainstation.io/online/software-engineering-bootcamp",
             "title": "Software Engineering Diploma",
             "logo": "https://www.studyabroadlists.com/logos/profile/184-profile-HGF62kUr_400x400.png",
             "start": "Aug 2024",
             "end": "Nov 2024",
-            "description": ["Graduated with a 96% average on all projects"],
+            "description": [
+                "Fully subsidized scholarship",
+                "Graduated with a 96% average on all projects",
+                "At BrainStation, I worked on full stack projects using React, Node, Express, and API integration. I focused on perfecting UI design, iterating until it met my standards for both function and visual appeal, resulting in smooth, polished interfaces."
+            ],
             "links": [
                 {
-                    "name": "Final Capstone Project",
-                    "href": "https://games.digipen.edu/games/rapid-ride-fight",
+                    "name": "Coffee Shop",
+                    "href": "https://reymaa19.github.io/reynald-maala-coffeeshop/",
                     "icon": "globe"
                 },
                 {
-                    "name": "Bell MTS Hackathon",
-                    "href": "https://games.digipen.edu/games/glowing-under",
+                    "name": "We Love Space",
+                    "href": "https://reymaa19.github.io/api-hackathon/",
+                    "icon": "globe"
+                },
+                {
+                    "name": "BrandSite",
+                    "href": "https://reymaa19.github.io/reynald-maala-bandsite/",
+                    "icon": "globe"
+                },
+                {
+                    "name": "Flowershop",
+                    "href": "https://main.d11552ularvx1d.amplifyapp.com/",
+                    "icon": "globe"
+                },
+                {
+                    "name": "BrainFlix",
+                    "href": "https://main.d1kojwutdpmpwm.amplifyapp.com/",
+                    "icon": "globe"
+                },
+                {
+                    "name": "Bell Donation Matcher",
+                    "href": "https://main.d2b60lk8pnosrj.amplifyapp.com/",
+                    "icon": "globe"
+                },
+                {
+                    "name": "Final Capstone Project",
+                    "href": "https://main.d2bp5hr9fb5epx.amplifyapp.com/",
                     "icon": "globe"
                 }
             ]
         },
         {
             "name": "Red River College Polytechnic",
-            "href": "https://www.sp.edu.sg",
+            "href": "https://www.rrc.ca/",
             "title": "Business Information Technology",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Red_River_College_logo.png",
             "start": "Jan 2020",
             "end": "Apr 2023",
-            "description": ["3-time recipient of the Dean's Honor List"]
+            "description": [
+                "3-time recipient of the Dean's Honor List",
+                "Developed CRUD Applications with PHP and JavaScript",
+                "Learned Application development with Python, Java, C#",
+                "Managed relational databases using SQL and data warehousing"
+            ],
+            "links": [
+                {
+                    "name": "Weather Processing App",
+                    "href": "https://github.com/reymaa19/weather_processing_app",
+                    "icon": "github"
+                },
+                {
+                    "name": "Winnipeg Transit Checker",
+                    "href": "https://reymaa19.github.io/Transit_Checker/",
+                    "icon": "globe"
+                }
+            ]
         }
     ]
 }

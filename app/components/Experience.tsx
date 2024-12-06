@@ -10,11 +10,11 @@ export default function Experience() {
 
     return (
         <Tabs defaultValue="work">
-            <TabsList className="mb-2 grid w-full grid-cols-2 lg:h-12">
-                <TabsTrigger className="lg:text-lg" value="work">
+            <TabsList className="mb-2 grid w-full grid-cols-2 lg:h-11">
+                <TabsTrigger className="lg:text-base" value="work">
                     Work
                 </TabsTrigger>
-                <TabsTrigger className="lg:text-lg" value="education">
+                <TabsTrigger className="lg:text-base" value="education">
                     Education
                 </TabsTrigger>
             </TabsList>

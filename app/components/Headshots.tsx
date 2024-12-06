@@ -82,7 +82,7 @@ export const AnimatedTestimonials = ({
                                         width={500}
                                         height={500}
                                         draggable={false}
-                                        className="min-h-[350] w-full rounded-3xl object-cover object-center cursor-pointer"
+                                        className="min-h-[350] max-h-[352] w-full rounded-3xl object-cover object-center cursor-pointer"
                                         onClick={handleNext}
                                     />
                                 </motion.div>
@@ -115,7 +115,7 @@ export const AnimatedTestimonials = ({
                             {testimonials[active].designation}
                         </p>
                         <motion.div className="text-lg text-gray-500 mt-6 dark:text-neutral-300">
-                            <div className="md:h-[140]">
+                            <div className="md:h-[150]">
                                 {testimonials[active].quote.split(" ").map((word, index) => (
                                     <motion.span
                                         key={index}

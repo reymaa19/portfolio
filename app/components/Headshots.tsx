@@ -82,7 +82,7 @@ export const AnimatedTestimonials = ({
                                         width={500}
                                         height={500}
                                         draggable={false}
-                                        className="xl:h-[350] h-full w-full rounded-3xl object-cover object-center cursor-pointer"
+                                        className="sm:h-[350] h-full w-full rounded-3xl object-cover object-center cursor-pointer"
                                         onClick={handleNext}
                                     />
                                 </motion.div>
@@ -143,7 +143,7 @@ export const AnimatedTestimonials = ({
                             <section className="mt-8 flex items-center gap-8">
                                 <Link href="/resume.pdf" target="_blank">
                                     <Button>
-                                        <span className="font-semibold">Resume </span>
+                                        <span className="font-semibold xl:text-base">Resume </span>
                                         <FileDown className="ml-1 size-5 xl:size-7" />
                                     </Button>
                                 </Link>

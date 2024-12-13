@@ -45,7 +45,7 @@ export const AnimatedTestimonials = ({
         <div className="max-w-sm md:max-w-4xl mx-auto antialiased px-4 md:px-8 lg:px-12 min-h-[336] md:mb-12">
             <div className="relative grid grid-cols-1 md:grid-cols-2 md:gap-20 gap-10 z-0">
                 <div>
-                    <div className="relative h-80 w-full">
+                    <div className="relative !h-80 w-full">
                         <AnimatePresence>
                             {testimonials.map((testimonial, index) => (
                                 <motion.div
@@ -142,7 +142,7 @@ export const AnimatedTestimonials = ({
                                     </motion.span>
                                 ))}
                             </div>
-                            <section className="mt-8 flex items-center gap-12 md:gap-6 lg:gap-2 min-[425px]:gap-24">
+                            <section className="mt-8 flex items-center gap-x-12 md:gap-x-6 lg:gap-x-2 min-[425px]:gap-x-24">
                                 <Link href="/resume.pdf" target="_blank">
                                     <Button>
                                         <span className="font-semibold lg:text-base">Resume </span>

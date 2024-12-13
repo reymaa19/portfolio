@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={"font-Satoshi antialiased mx-auto flex flex-col min-h-screen max-w-3xl lg:max-w-5xl px-8"}>
+            <body className={"font-Satoshi antialiased mx-auto flex flex-col min-h-screen max-w-3xl lg:max-w-4xl px-8"}>
                 <main className="flex-grow">{children}</main>
                 <Footer />
             </body>

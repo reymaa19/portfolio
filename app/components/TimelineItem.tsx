@@ -31,8 +31,8 @@ export default function TimelineItem({ experience }: Props) {
                         <span>{end ? end : "Present"}</span>
                     </time>
                 )}
-                <h2 className="font-semibold leading-none lg:text-xl">{name}</h2>
-                {title && <p className="text-sm text-muted-foreground lg:text-lg">{title}</p>}
+                <h3 className="font-semibold leading-none lg:text-xl">{name}</h3>
+                {title && <p className="text-sm text-muted-foreground lg:text-base">{title}</p>}
                 {description && (
                     <ul className="ml-4 list-outside list-disc">
                         {description.map((desc, i) => (

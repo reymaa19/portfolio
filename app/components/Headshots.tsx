@@ -110,7 +110,9 @@ export const AnimatedTestimonials = ({
                             ease: "easeInOut",
                         }}
                     >
-                        <h1 className="lg:text-4xl text-3xl font-bold dark:text-white text-black">{testimonials[active].name}</h1>
+                        <h1 className="lg:text-4xl text-3xl font-bold dark:text-white text-black">
+                            {testimonials[active].name}
+                        </h1>
                         <p className="lg:text-xl text-lg mt-1 text-gray-500 dark:text-neutral-500">
                             {testimonials[active].designation}
                         </p>
@@ -140,11 +142,11 @@ export const AnimatedTestimonials = ({
                                     </motion.span>
                                 ))}
                             </div>
-                            <section className="mt-8 flex items-center gap-8">
+                            <section className="mt-8 flex items-center gap-12 md:gap-6 lg:gap-2 min-[425px]:gap-24">
                                 <Link href="/resume.pdf" target="_blank">
                                     <Button>
                                         <span className="font-semibold lg:text-base">Resume </span>
-                                        <FileDown className="ml-1 size-5 lg:size-7" />
+                                        <FileDown className="size-6 sm:size-8 lg:size-9" />
                                     </Button>
                                 </Link>
                                 <Socials />

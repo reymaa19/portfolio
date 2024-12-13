@@ -17,7 +17,7 @@ export default function Socials() {
                     title={item.name}
                 >
                     <span className="sr-only">{item.name}</span>
-                    <Icon name={item.icon} aria-hidden="true" className="size-5 lg:size-6" />
+                    <Icon name={item.icon} aria-hidden="true" className="size-6" />
                 </a>
             ))}
         </section>

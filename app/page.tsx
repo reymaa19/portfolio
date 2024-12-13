@@ -6,7 +6,7 @@ import Contact from "@/components/ContactForm";
 
 export default function Home() {
     return (
-        <main className="mt-8 flex flex-col gap-16 pb-16">
+        <main className="mt-8 flex flex-col md:gap-16 gap-8 pb-16">
             <Headshots />
             <Experience />
             <Projects limit={6} />
